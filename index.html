@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nelo Solutions – Your Idea. Live. Online.</title>
+<meta name="description" content="Nelo Solutions builds websites, web apps and mobile applications for Cameroon and Africa. Your idea, delivered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="en">
+
+<!-- CANVAS for particles -->
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">
+    <div class="logo-badge">N</div>
+    <span class="logo-text">Nelo <em>Solutions</em></span>
+  </a>
+  <div class="nav-center" id="nav-links">
+    <a href="#about" data-en>About</a>
+    <a href="#about" data-fr>À propos</a>
+    <a href="#services" data-en>Services</a>
+    <a href="#services" data-fr>Services</a>
+    <a href="#work" data-en>Work</a>
+    <a href="#work" data-fr>Réalisations</a>
+    <a href="#process" data-en>Process</a>
+    <a href="#process" data-fr>Processus</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-pill">
+      <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+      <button id="btn-fr" onclick="setLang('fr')">FR</button>
+    </div>
+    <a href="#contact" class="btn-nav" data-en>Start a Project</a>
+    <a href="#contact" class="btn-nav" data-fr>Démarrer</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob-menu">
+  <a href="#about" data-en>About</a>
+  <a href="#about" data-fr>À propos</a>
+  <a href="#services" data-en>Services & Pricing</a>
+  <a href="#services" data-fr>Services & Tarifs</a>
+  <a href="#work">Portfolio</a>
+  <a href="#contact" data-en>Contact Us</a>
+  <a href="#contact" data-fr>Nous contacter</a>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="hero-inner">
+
+
+    <!-- BIG WORDS -->
+    <h1 class="hero-h1">
+      <span class="line fade delay-1" data-en>Your idea.</span>
+      <span class="line fade delay-1" data-fr>Votre idée.</span>
+      <span class="line fade delay-2" data-en>Built. <span class="accent">Live.</span></span>
+      <span class="line fade delay-2" data-fr>Construite. <span class="accent">En ligne.</span></span>
+      <span class="line fade delay-3" data-en>Now.</span>
+      <span class="line fade delay-3" data-fr>Maintenant.</span>
+    </h1>
+
+    <p class="hero-sub fade delay-4" data-en>
+      You have the vision. We have the code, the design, and the obsession to make it real.<br>
+      Websites · Web Apps · Mobile  built for Africa, built to win.
+    </p>
+    <p class="hero-sub fade delay-4" data-fr>
+      Vous avez la vision. Nous avons le code, le design et l'obsession pour la concrétiser.<br>
+      Sites · Applications · Mobile conçus pour l'Afrique, conçus pour gagner.
+    </p>
+
+    <!-- EMAIL CTA (GSWorld style) -->
+    <form class="hero-form fade delay-5" id="hero-form">
+      <input type="email" id="hero-email" placeholder="votre@email.com" autocomplete="email">
+      <button type="submit" data-en>Let's Talk</button>
+      <button type="submit" data-fr>Parlons-en</button>
+    </form>
+
+    <div class="hero-micro fade delay-5" data-en>Free consultation · No commitment · Response within 24h</div>
+    <div class="hero-micro fade delay-5" data-fr>Consultation gratuite · Sans engagement · Réponse sous 24h</div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-hint fade delay-5">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="ticker-wrap">
+  <div class="ticker-label" data-en>TRUSTED BY</div>
+  <div class="ticker-label" data-fr>ILS NOUS FONT CONFIANCE</div>
+  <div class="ticker-track">
+    <div class="ticker-inner" id="ticker">
+      <span>AGRICHECK</span>
+      <span class="dot">·</span>
+      <span>BRIT REALTY</span>
+      <span class="dot">·</span>
+      <span>TAPSILABABA</span>
+      <span class="dot">·</span>
+      <span>APMA TECH</span>
+      <span class="dot">·</span>
+      <span>WADABA</span>
+      <span class="dot">·</span>
+      <span>GATEWAY GLOBAL</span>
+      <span class="dot">·</span>
+      <span>LEGATSY DIGITAL</span>
+      <span class="dot">·</span>
+      <span>AGRICHECK</span>
+      <span class="dot">·</span>
+      <span>BRIT REALTY</span>
+      <span class="dot">·</span>
+      <span>TAPSILABABA</span>
+      <span class="dot">·</span>
+      <span>APMA TECH</span>
+      <span class="dot">·</span>
+      <span>WADABA</span>
+      <span class="dot">·</span>
+      <span>GATEWAY GLOBAL</span>
+      <span class="dot">·</span>
+      <span>LEGATSY DIGITAL</span>
+      <span class="dot">·</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="eyebrow" data-en>Who We Are</p>
+        <p class="eyebrow" data-fr>Qui nous sommes</p>
+        <h2 class="section-h2 reveal" data-en>
+          We turn<br>ideas into<br><span class="accent">products.</span>
+        </h2>
+        <h2 class="section-h2 reveal" data-fr>
+          Nous transformons<br>les idées en<br><span class="accent">produits.</span>
+        </h2>
+        <div class="stat-row reveal delay-1">
+          <div class="stat">
+            <span class="stat-n">49+</span>
+            <span class="stat-l" data-en>Projects Live</span>
+            <span class="stat-l" data-fr>Projets livrés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">5+</span>
+            <span class="stat-l" data-en>Years Building</span>
+            <span class="stat-l" data-fr>Années d'expérience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">38+</span>
+            <span class="stat-l" data-en>Live Products</span>
+            <span class="stat-l" data-fr>Produits en ligne</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="about-big reveal" data-en>
+          Nelo Solutions is a Cameroonian digital agency. We don't just build websites, we build the tools businesses need to compete, grow, and lead in a digital-first world.
+        </p>
+        <p class="about-big reveal" data-fr>
+          Nelo Solutions est une agence digitale camerounaise. Nous ne construisons pas seulement des sites web,  nous créons les outils dont les entreprises ont besoin pour concurrencer, croître et diriger dans un monde numérique.
+        </p>
+        <div class="about-pillars reveal delay-1">
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <span data-en>Fast delivery</span>
+            <span data-fr>Livraison rapide</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🎯</span>
+            <span data-en>Custom-built</span>
+            <span data-fr>Sur mesure</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🎓</span>
+            <span data-en>Training included</span>
+            <span data-fr>Formation incluse</span>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🛡️</span>
+            <span data-en>1-year maintenance</span>
+            <span data-fr>1 an de maintenance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STATEMENT ═══════════ -->
+<section id="statement">
+  <div class="container">
+    <blockquote class="big-quote reveal" data-en>
+      "Your competitors are automating, predicting, and moving faster every day.<br>
+      <span class="accent">We give you the tools to take the lead."</span>
+    </blockquote>
+    <blockquote class="big-quote reveal" data-fr>
+      "Vos concurrents automatisent, prédisent et avancent plus vite chaque jour.<br>
+      <span class="accent">Nous vous donnons les outils pour reprendre l'avantage."</span>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<section id="services">
+  <div class="container">
+    <p class="eyebrow center" data-en>What We Build</p>
+    <p class="eyebrow center" data-fr>Ce que nous construisons</p>
+    <h2 class="section-h2 center reveal" data-en>Three offers.<br><span class="accent">Zero compromise.</span></h2>
+    <h2 class="section-h2 center reveal" data-fr>Trois offres.<br><span class="accent">Zéro compromis.</span></h2>
+    <p class="section-sub center reveal delay-1" data-en>Every offer includes training, 1-year maintenance, and a dedicated point of contact.</p>
+    <p class="section-sub center reveal delay-1" data-fr>Chaque offre inclut formation, maintenance 1 an et un interlocuteur dédié.</p>
+
+    <div class="pricing-grid">
+      <!-- Card 1 -->
+      <div class="p-card reveal delay-1">
+        <div class="p-card-head">
+          <span class="p-num">01</span>
+          <span class="p-tag" data-en>Website</span>
+          <span class="p-tag" data-fr>Site Web</span>
+        </div>
+        <div class="p-price">125 000 <sub>FCFA</sub></div>
+        <p class="p-note" data-en>Domain name included</p>
+        <p class="p-note" data-fr>Nom de domaine inclus</p>
+        <ul class="p-list">
+          <li data-en>Professional responsive design</li>
+          <li data-fr>Design responsive professionnel</li>
+          <li data-en>Free domain name</li>
+          <li data-fr>Nom de domaine gratuit</li>
+          <li data-en>1 year hosting</li>
+          <li data-fr>1 an d'hébergement</li>
+          <li data-en>Training included</li>
+          <li data-fr>Formation incluse</li>
+          <li data-en>1 year maintenance</li>
+          <li data-fr>1 an de maintenance</li>
+        </ul>
+        <a href="#contact" class="p-btn" data-en>Get Started →</a>
+        <a href="#contact" class="p-btn" data-fr>Commencer →</a>
+      </div>
+
+      <!-- Card 2 (featured) -->
+      <div class="p-card featured reveal delay-2">
+        <div class="p-badge" data-en>⭐ Most Popular</div>
+        <div class="p-badge" data-fr>⭐ Plus Populaire</div>
+        <div class="p-card-head">
+          <span class="p-num">02</span>
+          <span class="p-tag" data-en>Web Application</span>
+          <span class="p-tag" data-fr>Application Web</span>
+        </div>
+        <div class="p-price">250 000 <sub>FCFA</sub></div>
+        <p class="p-note" data-en>Advanced features</p>
+        <p class="p-note" data-fr>Fonctionnalités avancées</p>
+        <ul class="p-list">
+          <li data-en>Tailor-made interface</li>
+          <li data-fr>Interface sur mesure</li>
+          <li data-en>Database included</li>
+          <li data-fr>Base de données incluse</li>
+          <li data-en>User authentication</li>
+          <li data-fr>Authentification utilisateurs</li>
+          <li data-en>Complete training</li>
+          <li data-fr>Formation complète</li>
+          <li data-en>1 year maintenance</li>
+          <li data-fr>1 an de maintenance</li>
+        </ul>
+        <a href="#contact" class="p-btn featured-btn" data-en>Get Started →</a>
+        <a href="#contact" class="p-btn featured-btn" data-fr>Commencer →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-card reveal delay-3">
+        <div class="p-card-head">
+          <span class="p-num">03</span>
+          <span class="p-tag" data-en>Mobile App</span>
+          <span class="p-tag" data-fr>Application Mobile</span>
+        </div>
+        <div class="p-price">700 000 <sub>FCFA</sub></div>
+        <p class="p-note" data-en>Android & iOS</p>
+        <p class="p-note" data-fr>Android & iOS</p>
+        <ul class="p-list">
+          <li data-en>Native / hybrid app</li>
+          <li data-fr>Application native / hybride</li>
+          <li data-en>Store publication</li>
+          <li data-fr>Publication sur les stores</li>
+          <li data-en>Polished UI/UX design</li>
+          <li data-fr>Design UI/UX soigné</li>
+          <li data-en>Training included</li>
+          <li data-fr>Formation incluse</li>
+          <li data-en>1 year maintenance</li>
+          <li data-fr>1 an de maintenance</li>
+        </ul>
+        <a href="#contact" class="p-btn" data-en>Get Started →</a>
+        <a href="#contact" class="p-btn" data-fr>Commencer →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WORK / PORTFOLIO ═══════════ -->
+<section id="work">
+  <div class="container">
+    <p class="eyebrow" data-en>Our Work</p>
+    <p class="eyebrow" data-fr>Nos réalisations</p>
+    <h2 class="section-h2 reveal" data-en>Real products.<br><span class="accent">Real impact.</span></h2>
+    <h2 class="section-h2 reveal" data-fr>De vrais produits.<br><span class="accent">Un impact réel.</span></h2>
+  </div>
+
+  <!-- Featured project -->
+  <div class="container">
+    <div class="work-featured reveal">
+      <div class="wf-meta">
+        <span class="wf-num">01</span>
+        <span class="wf-type" data-en>AgriTech · Web App</span>
+        <span class="wf-type" data-fr>AgriTech · App Web</span>
+      </div>
+      <div class="wf-body">
+        <h3 class="wf-title">Agricheck</h3>
+        <p class="wf-desc" data-en>Climate-smart farming platform. Satellite mapping, AI risk assessments, flexible financing for 1,000+ farmers across Sub-Saharan Africa.</p>
+        <p class="wf-desc" data-fr>Plateforme agricole intelligente. Cartographie satellitaire, évaluations de risques IA, financement flexible pour plus de 1 000 agriculteurs.</p>
+        <a href="https://www.agricheck.farm" target="_blank" class="wf-link">agricheck.farm ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="container">
+    <div class="work-grid">
+      <div class="w-card reveal delay-1" onclick="openSite('https://www.britrealty.com')">
+        <div class="w-card-top">
+          <span class="w-icon">🏠</span>
+          <span class="w-badge" data-en>Web App</span>
+          <span class="w-badge" data-fr>App Web</span>
+        </div>
+        <h4 class="w-name">Brit Realty</h4>
+        <p class="w-sector" data-en>Real Estate · Property Platform</p>
+        <p class="w-sector" data-fr>Immobilier · Plateforme propriété</p>
+        <p class="w-desc" data-en>Premium listings — residential, commercial, luxury estates with bookings and investor portfolio views.</p>
+        <p class="w-desc" data-fr>Annonces premium — résidentiel, commercial, luxe avec réservations et vues investisseur.</p>
+        <span class="w-url">britrealty.com ↗</span>
+      </div>
+      <div class="w-card reveal delay-2" onclick="openSite('https://www.tapsilababa.com')">
+        <div class="w-card-top">
+          <span class="w-icon">🎵</span>
+          <span class="w-badge" data-en>E-Commerce</span>
+          <span class="w-badge" data-fr>E-Commerce</span>
+        </div>
+        <h4 class="w-name">Tapsilababa</h4>
+        <p class="w-sector" data-en>Music · African E-Commerce</p>
+        <p class="w-sector" data-fr>Musique · E-Commerce africain</p>
+        <p class="w-desc" data-en>Multi-currency African music store — USD, GHS, FCFA. Beat catalogues, free downloads, Pan-African reach.</p>
+        <p class="w-desc" data-fr>Boutique musicale africaine multi-devises — USD, GHS, FCFA. Catalogues de beats, téléchargements gratuits.</p>
+        <span class="w-url">tapsilababa.com ↗</span>
+      </div>
+      <div class="w-card reveal delay-3" onclick="openSite('https://www.apma.tech')">
+        <div class="w-card-top">
+          <span class="w-icon">🐾</span>
+          <span class="w-badge" data-en>Web + Mobile</span>
+          <span class="w-badge" data-fr>Web + Mobile</span>
+        </div>
+        <h4 class="w-name">APMA</h4>
+        <p class="w-sector" data-en>AgriTech · AI Animal Farming</p>
+        <p class="w-sector" data-fr>AgriTech · Élevage IA</p>
+        <p class="w-desc" data-en>AI disease detection, personalized husbandry advice. 1,000+ farmers in 5+ countries trust it daily.</p>
+        <p class="w-desc" data-fr>Détection IA des maladies, conseils d'élevage personnalisés. Plus de 1 000 agriculteurs dans 5+ pays.</p>
+        <span class="w-url">apma.tech ↗</span>
+      </div>
+      <div class="w-card reveal delay-1" onclick="openSite('https://www.wadaba.org')">
+        <div class="w-card-top">
+          <span class="w-icon">🤝</span>
+          <span class="w-badge">Web App</span>
+        </div>
+        <h4 class="w-name">Wadaba</h4>
+        <p class="w-sector" data-en>Community · NGO Platform</p>
+        <p class="w-sector" data-fr>Communauté · Plateforme ONG</p>
+        <p class="w-desc" data-en>Connecting organisations and members continent-wide. Collaboration tools, impact measurement, community management.</p>
+        <p class="w-desc" data-fr>Connexion des organisations à travers le continent. Outils de collaboration et mesure d'impact.</p>
+        <span class="w-url">wadaba.org ↗</span>
+      </div>
+      <div class="w-card reveal delay-2" onclick="openSite('https://www.gatewayglobal.com')">
+        <div class="w-card-top">
+          <span class="w-icon">🌐</span>
+          <span class="w-badge" data-en>Website</span>
+          <span class="w-badge" data-fr>Site Web</span>
+        </div>
+        <h4 class="w-name">Gateway Global</h4>
+        <p class="w-sector" data-en>International · Business Services</p>
+        <p class="w-sector" data-fr>International · Services aux entreprises</p>
+        <p class="w-desc" data-en>Professional international business portal with full service presentation and lead capture.</p>
+        <p class="w-desc" data-fr>Portail business international avec présentation complète des services et capture de leads.</p>
+        <span class="w-url">gatewayglobal.com ↗</span>
+      </div>
+      <div class="w-card reveal delay-3" onclick="openSite('https://www.legatsydigital.com')">
+        <div class="w-card-top">
+          <span class="w-icon">💡</span>
+          <span class="w-badge" data-en>Website</span>
+          <span class="w-badge" data-fr>Site Web</span>
+        </div>
+        <h4 class="w-name">Legatsy Digital</h4>
+        <p class="w-sector" data-en>Digital Agency · Branding</p>
+        <p class="w-sector" data-fr>Agence digitale · Branding</p>
+        <p class="w-desc" data-en>Agency portfolio site with service showcase, case studies, and integrated lead generation funnel.</p>
+        <p class="w-desc" data-fr>Site d'agence avec portfolio, études de cas et entonnoir de génération de leads intégré.</p>
+        <span class="w-url">legatsydigital.com ↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROCESS ═══════════ -->
+<section id="process">
+  <div class="container">
+    <p class="eyebrow center" data-en>How We Work</p>
+    <p class="eyebrow center" data-fr>Comment nous travaillons</p>
+    <h2 class="section-h2 center reveal" data-en>Brief to live.<br><span class="accent">4 steps.</span></h2>
+    <h2 class="section-h2 center reveal" data-fr>Du brief au lancement.<br><span class="accent">4 étapes.</span></h2>
+
+    <div class="steps">
+      <div class="step reveal delay-1">
+        <div class="step-num active">01</div>
+        <div class="step-body">
+          <h4 data-en>Discovery</h4>
+          <h4 data-fr>Découverte</h4>
+          <p data-en>We listen. We map your goals, users, and constraints in one focused session.</p>
+          <p data-fr>Nous écoutons. Nous cartographions vos objectifs, utilisateurs et contraintes en une session ciblée.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h4 data-en>Design</h4>
+          <h4 data-fr>Design</h4>
+          <p data-en>Custom UI/UX crafted for your brand. You approve every screen before we write a line of code.</p>
+          <p data-fr>UI/UX sur mesure pour votre marque. Vous validez chaque écran avant que nous écrivions une ligne de code.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h4 data-en>Build & Test</h4>
+          <h4 data-fr>Développement & Tests</h4>
+          <p data-en>Full development with weekly updates. Rigorous QA before any launch zero surprises.</p>
+          <p data-fr>Développement complet avec mises à jour hebdomadaires. QA rigoureuse avant tout lancement.</p>
+        </div>
+      </div>
+      <div class="step reveal delay-4">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h4 data-en>Launch & Train</h4>
+          <h4 data-fr>Lancement & Formation</h4>
+          <p data-en>We deploy, train your team, and stay by your side for 12 months. Your success is our KPI.</p>
+          <p data-fr>Nous déployons, formons votre équipe et restons à vos côtés 12 mois. Votre succès est notre KPI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIALS (GSWorld style) ═══════════ -->
+<section id="testimonials">
+  <div class="container">
+    <p class="eyebrow center" data-en>Client Voices</p>
+    <p class="eyebrow center" data-fr>Avis Clients</p>
+    <h2 class="section-h2 center reveal" data-en>Don't take<br><span class="accent">our word for it.</span></h2>
+    <h2 class="section-h2 center reveal" data-fr>Ne prenez pas<br><span class="accent">notre parole pour argent.</span></h2>
+  </div>
+
+  <!-- Featured testimonial — large, GSWorld-style -->
+  <div class="container">
+    <div class="testi-hero reveal">
+      <div class="testi-hero-quote" data-en>
+        "APMA has completely transformed how I manage my farm. The AI disease detection saved my herd from a serious outbreak. This is not just an app — it's a lifeline."
+      </div>
+      <div class="testi-hero-quote" data-fr>
+        « APMA a complètement transformé la gestion de ma ferme. La détection IA des maladies a sauvé mon troupeau. Ce n'est pas juste une application — c'est une bouée de sauvetage. »
+      </div>
+      <div class="testi-hero-author">
+        <div class="testi-avatar">HB</div>
+        <div>
+          <strong>Hans Berinyuy</strong>
+          <span data-en>Farmer · Northwest Cameroon</span>
+          <span data-fr>Agriculteur · Nord-Ouest Cameroun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial grid -->
+  <div class="container">
+    <div class="testi-grid">
+      <div class="t-card reveal delay-1">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote" data-en>"Easy to use, even for someone not tech-savvy. A goldmine of information for any farmer. Nelo built something really special."</p>
+        <p class="t-quote" data-fr>« Facile à utiliser, même pour quelqu'un peu technophile. Une mine d'or d'informations. Nelo a construit quelque chose de vraiment spécial. »</p>
+        <div class="t-author">
+          <div class="t-av">DF</div>
+          <div>
+            <strong>Dingana Frederick</strong>
+            <span data-en>Farmer · Cameroon</span>
+            <span data-fr>Agriculteur · Cameroun</span>
+          </div>
+        </div>
+      </div>
+      <div class="t-card reveal delay-2">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote" data-en>"I've increased my profits significantly since using APMA. The personalized recommendations are spot-on. I recommend Nelo to every entrepreneur."</p>
+        <p class="t-quote" data-fr>« J'ai augmenté mes profits de manière significative depuis que j'utilise APMA. Je recommande Nelo à tout entrepreneur. »</p>
+        <div class="t-author">
+          <div class="t-av">AE</div>
+          <div>
+            <strong>Anderson E.</strong>
+            <span data-en>Engineer & Farmer</span>
+            <span data-fr>Ingénieur & Agriculteur</span>
+          </div>
+        </div>
+      </div>
+      <div class="t-card reveal delay-3">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote" data-en>"Our platform went from idea to live in weeks. Nelo understood exactly what we needed. The training was thorough and the team is always responsive."</p>
+        <p class="t-quote" data-fr>« Notre plateforme est passée de l'idée au lancement en quelques semaines. Nelo a compris exactement ce dont nous avions besoin. »</p>
+        <div class="t-author">
+          <div class="t-av">WD</div>
+          <div>
+            <strong>Wadaba Team</strong>
+            <span data-en>NGO Platform Client</span>
+            <span data-fr>Client Plateforme ONG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <p class="eyebrow" data-en>Start Today</p>
+        <p class="eyebrow" data-fr>Commencez aujourd'hui</p>
+        <h2 class="section-h2 reveal" data-en>
+          Your idea<br>deserves to<br><span class="accent">exist online.</span>
+        </h2>
+        <h2 class="section-h2 reveal" data-fr>
+          Votre idée<br>mérite d'<span class="accent">exister</span><br><span class="accent">en ligne.</span>
+        </h2>
+        <p class="contact-sub reveal delay-1" data-en>Free consultation. No commitment. We respond within 24 hours.</p>
+        <p class="contact-sub reveal delay-1" data-fr>Consultation gratuite. Sans engagement. Réponse sous 24 heures.</p>
+        <div class="contact-details reveal delay-2">
+          <a href="tel:+237677487982" class="cdet">
+            <span class="cdet-icon">📞</span>
+            <span>+237 6 77 48 79 82</span>
+          </a>
+          <a href="https://wa.me/237677487982" target="_blank" class="cdet">
+            <span class="cdet-icon">💬</span>
+            <span>WhatsApp</span>
+          </a>
+          <div class="cdet">
+            <span class="cdet-icon">📍</span>
+            <span>Douala, Cameroun</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal delay-2">
+        <form id="contact-form" class="cform">
+          <div class="cform-row">
+            <div class="cfield">
+              <label data-en>Full Name</label>
+              <label data-fr>Nom complet</label>
+              <input type="text" name="name" required placeholder="Jean Mbarga">
+            </div>
+            <div class="cfield">
+              <label>Email</label>
+              <input type="email" name="email" required placeholder="jean@example.com">
+            </div>
+          </div>
+          <div class="cfield">
+            <label data-en>What do you need?</label>
+            <label data-fr>De quoi avez-vous besoin ?</label>
+            <select name="service">
+              <option value="" data-en>Select a service</option>
+              <option value="" data-fr>Choisir un service</option>
+              <option value="website" data-en>Website — 125,000 FCFA</option>
+              <option value="website" data-fr>Site Web — 125 000 FCFA</option>
+              <option value="webapp" data-en>Web Application — 250,000 FCFA</option>
+              <option value="webapp" data-fr>Application Web — 250 000 FCFA</option>
+              <option value="mobile" data-en>Mobile App — 700,000 FCFA</option>
+              <option value="mobile" data-fr>App Mobile — 700 000 FCFA</option>
+              <option value="other" data-en>Other / Not sure</option>
+              <option value="other" data-fr>Autre / Pas sûr</option>
+            </select>
+          </div>
+          <div class="cfield">
+            <label data-en>Tell us about your project</label>
+            <label data-fr>Parlez-nous de votre projet</label>
+            <textarea name="message" rows="4" placeholder="..."></textarea>
+          </div>
+          <button type="submit" class="cform-btn">
+            <span data-en>Send Message →</span>
+            <span data-fr>Envoyer →</span>
+          </button>
+          <div class="cform-success" id="cform-success" data-en>✓ Message sent! We'll be in touch within 24h.</div>
+          <div class="cform-success" id="cform-success-fr" data-fr>✓ Message envoyé ! Nous vous répondons sous 24h.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-badge sm">N</div>
+          <span class="logo-text">Nelo <em>Solutions</em></span>
+        </div>
+        <p data-en>Websites · Web Apps · Mobile<br>Built for Cameroon. Built for Africa.</p>
+        <p data-fr>Sites · Applications · Mobile<br>Conçu pour le Cameroun. Conçu pour l'Afrique.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="fcol">
+          <h5 data-en>Services</h5>
+          <h5 data-fr>Services</h5>
+          <a href="#services" data-en>Website </a>
+          <a href="#services" data-fr>Site Web</a>
+          <a href="#services" data-en>Web App </a>
+          <a href="#services" data-fr>App Web </a>
+          <a href="#services" data-en>Mobile App</a>
+          <a href="#services" data-fr>App Mobile </a>
+        </div>
+        <div class="fcol">
+          <h5>Portfolio</h5>
+          <a href="https://www.agricheck.farm" target="_blank">Agricheck</a>
+          <a href="https://www.britrealty.com" target="_blank">Brit Realty</a>
+          <a href="https://www.tapsilababa.com" target="_blank">Tapsilababa</a>
+          <a href="https://www.apma.tech" target="_blank">APMA</a>
+          <a href="https://www.wadaba.org" target="_blank">Wadaba</a>
+          <a href="https://www.legatsydigital.com" target="_blank">Legatsy Digital</a>
+        </div>
+        <div class="fcol">
+          <h5>Contact</h5>
+          <a href="tel:+237677487982">+237 6 77 48 79 82</a>
+          <a href="https://wa.me/237677487982" target="_blank">WhatsApp</a>
+          <a>Douala, Cameroun</a>
+          <a data-en>Serving all of Africa</a>
+          <a data-fr>Au service de toute l'Afrique</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Nelo Solutions</span>
+      <span class="accent" data-en>Your digital presence, delivered.</span>
+      <span class="accent" data-fr>Votre présence digitale, livrée.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+
