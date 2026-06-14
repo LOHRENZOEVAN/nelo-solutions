@@ -171,7 +171,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       ? `Bonjour Nelo Solutions ! Je souhaite démarrer un projet. Mon email : ${email}`
       : `Hi Nelo Solutions! I'd like to start a project. My email: ${email}`;
 
-    window.open(`https://wa.me/237677487982?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/237673641763?text=${encodeURIComponent(msg)}`, '_blank');
     emailEl.value = '';
   });
 })();
@@ -209,7 +209,7 @@ function openSite(url) {
       ? `Bonjour Nelo Solutions !\n\nNom : ${name}\nEmail : ${email}\nService : ${serviceLabel}\n\n${message}`
       : `Hello Nelo Solutions!\n\nName: ${name}\nEmail: ${email}\nService: ${serviceLabel}\n\n${message}`;
 
-    window.open(`https://wa.me/237677487982?text=${encodeURIComponent(wa)}`, '_blank');
+    window.open(`https://wa.me/237673641763?text=${encodeURIComponent(wa)}`, '_blank');
 
     // Show success message
     const successEn = document.getElementById('cform-success');
